@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Formulir Pendaftaran Mahasiswa</h1>
+        </header>
+
+        <section class="tabel-section">
+            <h2>Data Mahasiswa</h2>
+            <table class="tabel-data">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>NIM</th>
+                        <th>Jurusan</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Angga Febi Saputra</td>
+                        <td>230101133</td>
+                        <td>Teknik Informatika</td>
+                        <td>anggafeby272@mail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="form-section">
+            <h2>Formulir Pendaftaran</h2>
+            <form action="#" method="post" class="form">
+                <label for="Nama">Nama</label>
+                <input type="text" id="Nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+                <label for="NIM">NIM</label>
+                <input type="number" id="NIM" name="nim" placeholder="Masukkan NIM" required>
+
+                <label for="Jurusan">Jurusan</label>
+                <input type="text" id="Jurusan" name="jurusan" placeholder="Contoh: Teknik Informatika" required>
+
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="email" placeholder="Masukkan email aktif" required>
+
+                <label for="Password">Password</label>
+                <input type="password" id="Password" name="password" placeholder="Buat password" required>
+
+                <label>Jenis Kelamin</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="kelamin" value="pria" required> Pria</label>
+                    <label><input type="radio" name="kelamin" value="wanita"> Wanita</label>
+                </div>
+
+                <label>Hobi</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="hobi" value="entertainment"> Entertainment</label>
+                    <label><input type="checkbox" name="hobi" value="olahraga"> Olahraga</label>
+                    <label><input type="checkbox" name="hobi" value="lainnya"> Lainnya</label>
+                </div>
+
+                <label for="JurusanSelect">Pilih Program Studi</label>
+                <select id="JurusanSelect" name="jurusan_select" required>
+                    <option value="">-- Pilih Jurusan --</option>
+                    <option value="Teknik Kimia">Teknik Kimia</option>
+                    <option value="Teknik Elektro">Teknik Elektro</option>
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                </select>
+
+                <button type="submit" class="btn-submit">Kirim</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>Tonton video tutorial di <a href="https://youtu.be/71a2zeC71gk?si=9BHSiXRJWeIQR4W4" target="_blank">YouTube</a>.</p>
+            <p>Kembali ke <a href="/Profile/Profil.html">Halaman Profil</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>
